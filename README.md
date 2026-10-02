@@ -14,8 +14,11 @@
   - [Session 01 · 第一个世界模型：空间定位与自我的诞生](sessions/01-第一个世界模型：空间定位与自我的诞生.md) — 头朝向细胞/IMU 融合、双前庭差分、等价原理、传出副本、Damasio 阶梯
   - [Session 02 · 第二次突破：强化——RL 组件的演化组装](sessions/02-第二次突破：强化——RL组件的演化组装.md) — 多巴胺 TD、基底神经节 Actor-Critic、下丘脑效价、MDP 元组、包裹而非替换
   - [Session 03 · 第三次突破：模拟、生成模型与趋同原理](sessions/03-第三次突破：模拟、生成模型与趋同原理.md) — MuZero、2026 现状核查、皮质柱=生成器、丘脑闭环、趋同原理
+  - [Session 04 · 亥姆霍兹：感知即推断](sessions/04-亥姆霍兹：感知即推断.md) — 感知三属性、亥姆霍兹机器 wake-sleep、VAE 谱系、隐藏起因、标定代谢论
+  - [Session 05 · 幻觉、梦与想象：受约束的幻觉](sessions/05-幻觉梦与想象：受约束的幻觉.md) — Charles Bonnet、幻觉=训练数据的报告、想象-识别互斥、模型坍缩人类版、验证世界四签名
+  - [Session 06 · 预测一切：新皮质任务书与鸭子新皮质萌芽](sessions/06-预测一切：新皮质任务书与鸭子新皮质萌芽.md) — 表 11.1 深读、意识=残差显示器、稠密监督、鸭子边缘-云端世界模型架构 v0
 
 ## 关联
 
 - 长期记忆条目：「自我演化阶梯」（具身智能体公式续篇）、「海洋三段论+趋同原理」
-- 姊妹项目：[my-microduck](https://github.com/ReadbytheBeach/my-microduck)（MicroDuck 机器人学习笔记）
+- 姊妹项目：[my-microduck](https://github.com/ReadbytheBeach/my-microduck)（MicroDuck 机器人学习笔记；鸭子新皮质正式设计文档将入其 docs/）
