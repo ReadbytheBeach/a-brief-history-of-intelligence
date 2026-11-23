@@ -1,0 +1,468 @@
+{
+  "schema_version": 1,
+  "repository": "ReadbytheBeach/a-brief-history-of-intelligence",
+  "primary_language": "zh-CN",
+  "updated_on": "2026-11-23",
+  "reference_format": "https://github.com/ReadbytheBeach/robot-rsi-research",
+  "id_prefix": "ABHI",
+  "document_globs": ["sessions/**/*.md"],
+  "categories": [
+    {
+      "id": "embodiment_learning",
+      "title_zh": "具身感知与强化学习",
+      "title_en": "Embodied Perception and Reinforcement Learning"
+    },
+    {
+      "id": "simulation_perception",
+      "title_zh": "模拟、生成模型与感知",
+      "title_en": "Simulation, Generative Models, and Perception"
+    },
+    {
+      "id": "planning_intention",
+      "title_zh": "回放、规划与意图",
+      "title_en": "Replay, Planning, and Intention"
+    },
+    {
+      "id": "social_language",
+      "title_zh": "心智化、合作与语言",
+      "title_en": "Mentalizing, Cooperation, and Language"
+    }
+  ],
+  "kinds": {
+    "reading_session": {
+      "title_zh": "读书会笔记",
+      "title_en": "Reading session"
+    }
+  },
+  "evidence_tags": {
+    "FACT": {
+      "title_zh": "来源事实",
+      "description_zh": "可核查的来源或文本事实；不表示书中理论、工程类比已获独立验证。"
+    },
+    "AUTHOR_REPORT": {
+      "title_zh": "外部报告",
+      "description_zh": "书作者、研究作者或外部评测方报告的观点与结果，保留归属和条件。"
+    },
+    "AUTHOR_HYPOTHESIS": {
+      "title_zh": "作者假说",
+      "description_zh": "原作者提出的假说，不升级为已验证结论。"
+    },
+    "LOCAL_RESULT": {
+      "title_zh": "本地记录",
+      "description_zh": "仓库记录的本地实验、失败尝试、工具检查或合成数据结果，保留实际范围。"
+    },
+    "DISCUSSION": {
+      "title_zh": "分析推断",
+      "description_zh": "调研中的解释、推断或类比。"
+    },
+    "PROPOSAL": {
+      "title_zh": "设计建议",
+      "description_zh": "待实施或验证的设计与实验建议。"
+    },
+    "USER_CONTEXT": {
+      "title_zh": "用户前提",
+      "description_zh": "用户提供的应用条件，不据此补造未知规格。"
+    }
+  },
+  "reading_routes": [
+    {
+      "title_zh": "身体状态怎样进入奖励与自我表征？",
+      "title_en": "How do bodily states enter rewards and self-representation?",
+      "document_ids": ["ABHI-001", "ABHI-002", "ABHI-003"]
+    },
+    {
+      "title_zh": "感知与想象怎样共同约束世界模型？",
+      "title_en": "How do perception and imagination constrain world models?",
+      "document_ids": ["ABHI-004", "ABHI-005", "ABHI-006", "ABHI-007"]
+    },
+    {
+      "title_zh": "回放如何连接规划、自身意图与他人心智？",
+      "title_en": "How does replay connect planning, intention, and other minds?",
+      "document_ids": ["ABHI-008", "ABHI-009", "ABHI-010"]
+    },
+    {
+      "title_zh": "语言怎样改变合作与跨世代积累？",
+      "title_en": "How does language change cooperation and cumulative culture?",
+      "document_ids": ["ABHI-011", "ABHI-012", "ABHI-013"]
+    }
+  ],
+  "documents": [
+    {
+      "document_id": "ABHI-001",
+      "session_id": "ABHI-001",
+      "path": "sessions/01-线虫模拟环境详解.md",
+      "title_zh": "Session 01 · 线虫模拟环境详解",
+      "title_en": "Session 01 · Embodied Worm Simulation Explained",
+      "kind": "reading_session",
+      "category": "embodiment_learning",
+      "language": "zh-CN",
+      "evidence_as_of": null,
+      "indexed_on": "2026-11-23",
+      "topics_zh": ["两侧对称感知", "动态效价", "奖励调制", "感知动作闭环"],
+      "topics_en": ["bilateral sensing", "dynamic valence", "reward modulation", "perception-action loops"],
+      "question_zh": "线虫模拟怎样把两侧感官差异、内部能量与奖励调制接入动作闭环？",
+      "reading_summary": [
+        {
+          "tag": "AUTHOR_REPORT",
+          "text_zh": "原笔记描述六个成对传感器、环境场、观测向量与七组分奖励，并摘录模拟代码。"
+        },
+        {
+          "tag": "DISCUSSION",
+          "text_zh": "讨论把饥饿相关效价反转与情感调制用于解释身体、环境和策略的闭环关系。"
+        }
+      ],
+      "scope_zh": "模拟机制导读与生物学类比；本次索引未运行所引代码，也未独立核验生物机制。",
+      "related_ids": ["ABHI-003", "ABHI-004"],
+      "content_date": "2026-09-29",
+      "content_date_kind": "archive"
+    },
+    {
+      "document_id": "ABHI-002",
+      "session_id": "ABHI-002",
+      "path": "sessions/02-第一个世界模型：空间定位与自我的诞生.md",
+      "title_zh": "Session 02 · 第一个世界模型：空间定位与自我的诞生",
+      "title_en": "Session 02 · The First World Model: Spatial Localization and the Emergence of Self",
+      "kind": "reading_session",
+      "category": "embodiment_learning",
+      "language": "zh-CN",
+      "evidence_as_of": null,
+      "indexed_on": "2026-11-23",
+      "topics_zh": ["头朝向细胞", "前庭融合", "空间表征", "传出副本", "自我分层"],
+      "topics_en": ["head-direction cells", "vestibular fusion", "spatial representation", "efference copy", "layers of self"],
+      "question_zh": "空间定位与传出副本为什么被讨论为自我和世界首次分离的机制？",
+      "reading_summary": [
+        {
+          "tag": "AUTHOR_REPORT",
+          "text_zh": "原笔记围绕第9章整理头朝向神经元、内侧皮质空间表征及 Damasio 自我分层。"
+        },
+        {
+          "tag": "DISCUSSION",
+          "text_zh": "讨论用 IMU 融合与状态观测器类比定位和传出副本，并把自我解释为区分自生感官变化的变量。"
+        }
+      ],
+      "scope_zh": "书页与批注讨论，含机器人学类比和用户预言；不构成自我理论或硬件性能的独立验证。",
+      "related_ids": ["ABHI-001", "ABHI-003", "ABHI-010"],
+      "content_date": "2026-09-29",
+      "content_date_kind": "archive"
+    },
+    {
+      "document_id": "ABHI-003",
+      "session_id": "ABHI-003",
+      "path": "sessions/03-第二次突破：强化——RL组件的演化组装.md",
+      "title_zh": "Session 03 · 第二次突破：强化——RL 组件的演化组装",
+      "title_en": "Session 03 · The Second Breakthrough: Reinforcement and the Evolutionary Assembly of RL Components",
+      "kind": "reading_session",
+      "category": "embodiment_learning",
+      "language": "zh-CN",
+      "evidence_as_of": null,
+      "indexed_on": "2026-11-23",
+      "topics_zh": ["时序差分误差", "行动者评判者", "效价与奖励", "探索利用", "分层控制"],
+      "topics_en": ["temporal-difference error", "actor-critic", "valence and rewards", "exploration and exploitation", "hierarchical control"],
+      "question_zh": "原笔记怎样将第二次突破的演化清单映射为强化学习组件，并区分合作与对抗？",
+      "reading_summary": [
+        {
+          "tag": "AUTHOR_REPORT",
+          "text_zh": "笔记按书中第二次突破整理多巴胺 TD、基底神经节 Actor-Critic、好奇心与空间表征。"
+        },
+        {
+          "tag": "DISCUSSION",
+          "text_zh": "讨论校准 Actor-Critic 与 GAN 的差异，并以效价接地、探索上限和旧层保留解释分层学习。"
+        }
+      ],
+      "scope_zh": "第9—10章的整理与工程解释，另有气候机制支线；映射与类比不等于演化机制已被本仓库验证。",
+      "related_ids": ["ABHI-001", "ABHI-002", "ABHI-004"],
+      "content_date": "2026-09-29",
+      "content_date_kind": "archive"
+    },
+    {
+      "document_id": "ABHI-004",
+      "session_id": "ABHI-004",
+      "path": "sessions/04-第三次突破：模拟、生成模型与趋同原理.md",
+      "title_zh": "Session 04 · 第三次突破：模拟、生成模型与趋同原理",
+      "title_en": "Session 04 · The Third Breakthrough: Simulation, Generative Models, and Convergence",
+      "kind": "reading_session",
+      "category": "simulation_perception",
+      "language": "zh-CN",
+      "evidence_as_of": null,
+      "indexed_on": "2026-11-23",
+      "topics_zh": ["有模型强化学习", "价值等价", "皮质柱假说", "丘脑闭环", "趋同演化"],
+      "topics_en": ["model-based reinforcement learning", "value equivalence", "cortical column hypothesis", "thalamocortical loops", "convergent evolution"],
+      "question_zh": "原讨论如何连接离线模拟、生成模型与 Agent 闭环，并限定趋同原理的适用范围？",
+      "reading_summary": [
+        {
+          "tag": "AUTHOR_HYPOTHESIS",
+          "text_zh": "笔记讨论蒙卡斯尔皮质柱假说，以双向生成模型解释感知与想象。"
+        },
+        {
+          "tag": "DISCUSSION",
+          "text_zh": "原文比较 MuZero、世界模型与 Agent harness，提出功能约束可促成器官收敛，同时保留历史偶然的接口差异。"
+        }
+      ],
+      "scope_zh": "第10—11章讨论及原文截至2026-09的 AI 现状判断；本次未更新项目进展或重新核验其科学与性能主张。",
+      "related_ids": ["ABHI-003", "ABHI-005", "ABHI-007"],
+      "content_date": "2026-09-29",
+      "content_date_kind": "archive"
+    },
+    {
+      "document_id": "ABHI-005",
+      "session_id": "ABHI-005",
+      "path": "sessions/05-亥姆霍兹：感知即推断.md",
+      "title_zh": "Session 05 · 亥姆霍兹：感知即推断",
+      "title_en": "Session 05 · Helmholtz: Perception as Inference",
+      "kind": "reading_session",
+      "category": "simulation_perception",
+      "language": "zh-CN",
+      "evidence_as_of": null,
+      "indexed_on": "2026-11-23",
+      "topics_zh": ["无意识推断", "感知多稳态", "亥姆霍兹机器", "唤醒睡眠算法", "变分自编码器"],
+      "topics_en": ["unconscious inference", "multistable perception", "Helmholtz machines", "wake-sleep algorithm", "variational autoencoders"],
+      "question_zh": "亥姆霍兹的感知推断如何在笔记中连接生成模型、wake-sleep 与 VAE？",
+      "reading_summary": [
+        {
+          "tag": "AUTHOR_HYPOTHESIS",
+          "text_zh": "笔记按亥姆霍兹的推断论解释补全、多稳态与感知惯性，并整理亥姆霍兹机器。"
+        },
+        {
+          "tag": "DISCUSSION",
+          "text_zh": "讨论用隐藏起因串联 wake-sleep 与 VAE，提出持续校准及面向决策分配保真度的解释。"
+        }
+      ],
+      "scope_zh": "第11章理论导读与讨论性谱系整理；公式是教学表达，不是算法复现或神经机制的独立检验。",
+      "related_ids": ["ABHI-004", "ABHI-006", "ABHI-007"],
+      "content_date": "2026-09-29",
+      "content_date_kind": "archive"
+    },
+    {
+      "document_id": "ABHI-006",
+      "session_id": "ABHI-006",
+      "path": "sessions/06-幻觉梦与想象：受约束的幻觉.md",
+      "title_zh": "Session 06 · 幻觉、梦与想象：受约束的幻觉",
+      "title_en": "Session 06 · Hallucinations, Dreams, and Imagination: Constrained Hallucination",
+      "kind": "reading_session",
+      "category": "simulation_perception",
+      "language": "zh-CN",
+      "evidence_as_of": null,
+      "indexed_on": "2026-11-23",
+      "topics_zh": ["查尔斯邦纳综合征", "感觉约束", "想象与识别", "合成内容校准", "现实检验"],
+      "topics_en": ["Charles Bonnet syndrome", "sensory constraints", "imagination and recognition", "synthetic-content calibration", "reality testing"],
+      "question_zh": "感觉约束、既有训练与现实校验在原讨论的幻觉和想象解释中分别扮演什么角色？",
+      "reading_summary": [
+        {
+          "tag": "AUTHOR_REPORT",
+          "text_zh": "笔记围绕书中幻觉与想象内容，讨论查尔斯·邦纳综合征，并区分先天与后天失明。"
+        },
+        {
+          "tag": "DISCUSSION",
+          "text_zh": "讨论将模型坍缩类比延伸到人类中介信息信道，并提出多模态互证、直接操作与分级信任。"
+        }
+      ],
+      "scope_zh": "原文存档日为2026-09-29，注明部分讨论延续至10-02；其中睡眠功能与人类模型坍缩属假说或推演，非本次核验结论。",
+      "related_ids": ["ABHI-005", "ABHI-007", "ABHI-008"],
+      "content_date": "2026-09-29",
+      "content_date_kind": "archive"
+    },
+    {
+      "document_id": "ABHI-007",
+      "session_id": "ABHI-007",
+      "path": "sessions/07-预测一切：新皮质任务书与鸭子新皮质萌芽.md",
+      "title_zh": "Session 07 · 预测一切：新皮质任务书与鸭子新皮质萌芽",
+      "title_en": "Session 07 · Predicting Everything: A Neocortical Specification and an Emerging Robot World Model",
+      "kind": "reading_session",
+      "category": "simulation_perception",
+      "language": "zh-CN",
+      "evidence_as_of": null,
+      "indexed_on": "2026-11-23",
+      "topics_zh": ["预测误差", "稠密监督", "精确度加权", "边缘云端架构", "世界模型"],
+      "topics_en": ["prediction error", "dense supervision", "precision weighting", "edge-cloud architecture", "world models"],
+      "question_zh": "从奖励预测转向感觉流预测，怎样导出原笔记的世界模型任务书与分层架构方案？",
+      "reading_summary": [
+        {
+          "tag": "DISCUSSION",
+          "text_zh": "笔记据表11.1讨论预测目标的升级，把感觉流视为稠密监督，并以相关性权重分配保真预算。"
+        },
+        {
+          "tag": "PROPOSAL",
+          "text_zh": "原文提出 MicroDuck 反射层、端侧小世界模型、家庭大模型和语义层的 v0 架构及日夜学习循环。"
+        }
+      ],
+      "scope_zh": "第11章读书讨论与架构草案；频率、硬件可行性和 OTA 流程属于原方案，非本次实现或实测结果。",
+      "related_ids": ["ABHI-004", "ABHI-005", "ABHI-008"],
+      "content_date": "2026-10-02",
+      "content_date_kind": "archive"
+    },
+    {
+      "document_id": "ABHI-008",
+      "session_id": "ABHI-008",
+      "path": "sessions/08-想象世界的老鼠：回放、世界模型与前额叶的意志.md",
+      "title_zh": "Session 08 · 想象世界的老鼠：回放、世界模型与前额叶的意志",
+      "title_en": "Session 08 · Replay, World Models, and Prefrontal Intention in Rats",
+      "kind": "reading_session",
+      "category": "planning_intention",
+      "language": "zh-CN",
+      "evidence_as_of": null,
+      "indexed_on": "2026-11-23",
+      "topics_zh": ["情景记忆", "互补学习系统", "经验与生成回放", "世界模型", "前额叶与意图"],
+      "topics_en": ["episodic memory", "complementary learning systems", "experience and generative replay", "world models", "prefrontal cortex and intention"],
+      "question_zh": "情景回放怎样连接快速记忆与慢速固化，世界模型和前额叶又如何支持有成本的规划？",
+      "reading_summary": [
+        {
+          "tag": "AUTHOR_REPORT",
+          "text_zh": "本讲依原书梳理海马体快速编码、新皮质缓慢固化与回放机制，并区分无模型和有模型强化学习。"
+        },
+        {
+          "tag": "DISCUSSION",
+          "text_zh": "讨论将 ICL、外置记忆和 GitHub 类比为部分记忆功能，强调写入、回放、移交机制的差别与深度模拟的成本。"
+        }
+      ],
+      "scope_zh": "第12章及第13章开头的读书讨论与记忆系统类比，含已存档的工程联动说明；本次未验证联动实现或学习成效。",
+      "related_ids": ["ABHI-006", "ABHI-007", "ABHI-009"],
+      "content_date": "2026-10-03",
+      "content_date_kind": "archive"
+    },
+    {
+      "document_id": "ABHI-009",
+      "session_id": "ABHI-009",
+      "path": "sessions/09-意图的进化：习惯、阈值与运动分层.md",
+      "title_zh": "Session 09 · 意图的进化：习惯、阈值与运动分层",
+      "title_en": "Session 09 · The Evolution of Intention: Habits, Thresholds, and Motor Hierarchy",
+      "kind": "reading_session",
+      "category": "planning_intention",
+      "language": "zh-CN",
+      "evidence_as_of": null,
+      "indexed_on": "2026-11-23",
+      "topics_zh": ["目标导向行为", "习惯形成", "意图与自我模型", "更新阈值", "运动分层"],
+      "topics_en": ["goal-directed behavior", "habit formation", "intention and self-models", "update thresholds", "motor hierarchy"],
+      "question_zh": "意图如何区别于习惯，更新阈值与运动分层又怎样联系目标导向行为及机器人控制？",
+      "reading_summary": [
+        {
+          "tag": "AUTHOR_REPORT",
+          "text_zh": "本讲依原书讨论奖励贬值实验、习惯系统与目标导向行为，并整理运动分层。"
+        },
+        {
+          "tag": "DISCUSSION",
+          "text_zh": "讨论把意图更新解释为有成本和阈值的重新规划，以 Agent 习惯与机器人分层控制作工程类比。"
+        }
+      ],
+      "scope_zh": "第13—14章读书讨论、工程案例与解释；原文关于顿悟的阈值模型是讨论性类比，不是本仓库实验结论。",
+      "related_ids": ["ABHI-003", "ABHI-008", "ABHI-010"],
+      "content_date": "2026-10-05",
+      "content_date_kind": "archive"
+    },
+    {
+      "document_id": "ABHI-010",
+      "session_id": "ABHI-010",
+      "path": "sessions/10-如何模拟他人心智：二阶模型与群体自我的判据.md",
+      "title_zh": "Session 10 · 如何模拟他人心智：二阶模型与群体自我的判据",
+      "title_en": "Session 10 · Modeling Other Minds: Second-Order Models and Criteria for a Collective Self",
+      "kind": "reading_session",
+      "category": "social_language",
+      "language": "zh-CN",
+      "evidence_as_of": null,
+      "indexed_on": "2026-11-23",
+      "topics_zh": ["心智化", "二阶模型", "元认知", "多智能体编排", "自指反馈"],
+      "topics_en": ["mentalizing", "second-order models", "metacognition", "multi-agent orchestration", "self-referential feedback"],
+      "question_zh": "模拟他人心智的二阶模型怎样转向自我建模，多 Agent 系统何时才满足群体自我的判据？",
+      "reading_summary": [
+        {
+          "tag": "AUTHOR_REPORT",
+          "text_zh": "本讲依原书梳理灵长类前额叶的二阶建模与模拟中的自我投射，并记录脑区和病例解释的校准。"
+        },
+        {
+          "tag": "PROPOSAL",
+          "text_zh": "讨论提出 Agent 二阶模块的持久化与回流路径，以维护并消费自身状态模型的自指环作为群体自我操作判据。"
+        }
+      ],
+      "scope_zh": "原文讨论日期为2026-10-05，注明2026-10-07原样补档；群体自我判据与模块方案尚属讨论和提案。",
+      "related_ids": ["ABHI-002", "ABHI-009", "ABHI-011"],
+      "content_date": "2026-10-05",
+      "content_date_kind": "discussion"
+    },
+    {
+      "document_id": "ABHI-011",
+      "session_id": "ABHI-011",
+      "path": "sessions/11-共同神话：合作规模的压缩协议与神的账本.md",
+      "title_zh": "Session 11 · 共同神话：合作规模的压缩协议与神的账本",
+      "title_en": "Session 11 · Shared Myths: A Compression Protocol for Cooperation and the Divine Ledger",
+      "kind": "reading_session",
+      "category": "social_language",
+      "language": "zh-CN",
+      "evidence_as_of": null,
+      "indexed_on": "2026-11-23",
+      "topics_zh": ["共同神话", "合作规模", "邓巴数", "价值函数", "不可证伪性"],
+      "topics_en": ["shared myths", "scale of cooperation", "Dunbar's number", "value functions", "unfalsifiability"],
+      "question_zh": "共同神话如何扩大陌生人合作，作为协调工具与价值本体时又有哪些机制差别？",
+      "reading_summary": [
+        {
+          "tag": "AUTHOR_REPORT",
+          "text_zh": "本讲依原书对照直接关系与共同神话的合作规模，记录国家、金钱和制度协调陌生人的论述。"
+        },
+        {
+          "tag": "DISCUSSION",
+          "text_zh": "讨论以关系压缩、价值函数和奖励记账类比共同信念，区分工具或本体及超自然实体与社会因果作用。"
+        }
+      ],
+      "scope_zh": "原书合作论述及宗教、制度的讨论性解释；复杂度和带宽模型是类比，不据此断言信仰的科学真伪。",
+      "related_ids": ["ABHI-010", "ABHI-012", "ABHI-013"],
+      "content_date": "2026-10-07",
+      "content_date_kind": "archive"
+    },
+    {
+      "document_id": "ABHI-012",
+      "session_id": "ABHI-012",
+      "path": "sessions/12-语言的征用：蜂巢式大脑、思想的复制子与文明的形态.md",
+      "title_zh": "Session 12 · 语言的征用：蜂巢式大脑、思想的复制子与文明的形态",
+      "title_en": "Session 12 · Language Exaptation: Hive Minds, Replicating Ideas, and the Forms of Civilization",
+      "kind": "reading_session",
+      "category": "social_language",
+      "language": "zh-CN",
+      "evidence_as_of": null,
+      "indexed_on": "2026-11-23",
+      "topics_zh": ["跨代知识积累", "语言与复制子", "文化冗余", "语言区征用", "群体智能"],
+      "topics_en": ["intergenerational knowledge accumulation", "language and replicators", "cultural redundancy", "exaptation of language regions", "collective intelligence"],
+      "question_zh": "语言和文字如何使思想跨代积累，复制、多样性与旧系统征用又怎样影响群体智能的类比？",
+      "reading_summary": [
+        {
+          "tag": "AUTHOR_REPORT",
+          "text_zh": "本讲依原书整理专业化、人口与文字支持跨代积累的论述，以及语言同步内部模拟和语言区征用的解释。"
+        },
+        {
+          "tag": "DISCUSSION",
+          "text_zh": "讨论将思想传播类比为复制子协议，强调 Agent 整合的多样性冗余，并延伸到文明载体与 TD 学习。"
+        }
+      ],
+      "scope_zh": "读书讨论与文化、Agent 工程类比，含 TD-Gammon 教学支线；未开展跨文化验证或新算法实验。",
+      "related_ids": ["ABHI-003", "ABHI-011", "ABHI-013"],
+      "content_date": "2026-10-07",
+      "content_date_kind": "archive"
+    },
+    {
+      "document_id": "ABHI-013",
+      "session_id": "ABHI-013",
+      "path": "sessions/13-第六次突破的悬崖：八卦循环、残暴的账目与目标的初值.md",
+      "title_zh": "Session 13 · 第六次突破的悬崖：八卦循环、残暴的账目与目标的初值",
+      "title_en": "Session 13 · At the Edge of the Sixth Breakthrough: Gossip, Cruelty, and Initial Goals",
+      "kind": "reading_session",
+      "category": "social_language",
+      "language": "zh-CN",
+      "evidence_as_of": null,
+      "indexed_on": "2026-11-23",
+      "topics_zh": ["声誉与八卦", "利他与惩罚", "演化反馈", "第六次突破", "目标与价值"],
+      "topics_en": ["reputation and gossip", "altruism and punishment", "evolutionary feedback", "the sixth breakthrough", "goals and values"],
+      "question_zh": "八卦、利他与语言怎样构成演化反馈，第六次突破又如何把目标与价值初值变成人类的选择？",
+      "reading_summary": [
+        {
+          "tag": "AUTHOR_REPORT",
+          "text_zh": "本讲依原书梳理八卦、利他和语言的正反馈循环，记录尾声对第六次突破、个体边界和人类目标的提问。"
+        },
+        {
+          "tag": "DISCUSSION",
+          "text_zh": "讨论以演化策略解释残暴与合作，将未来类人 AI 包含语言模型视作推断，把下一代智能的价值初值保留为价值选择。"
+        }
+      ],
+      "scope_zh": "原书尾声和读书会价值讨论；演化解释、LLM 类比与未来判断均未在本次作科学或预测验证。",
+      "related_ids": ["ABHI-011", "ABHI-012"],
+      "content_date": "2026-10-07",
+      "content_date_kind": "archive"
+    }
+  ]
+}
